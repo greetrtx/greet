@@ -1,0 +1,327 @@
+/* Attention!
+This is the style of the template
+be careful what are you modify, this could result in 
+affecting the styling of the template
+Created by Mihaidev-Cloud :3 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap');
+
+
+
+:root {
+    --bgColor:#0e0e0f;
+    --accentColor: #E6E6E6;
+    --bold-h1:900;
+    --bold-p:200;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-josefin: 'Josefin Sans', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 2rem;
+}
+
+canvas {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -10;
+    visibility: visible;
+    }
+
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+h1 {
+    font-family: var(--font-inter);
+    font-weight: var(--bold-h1) !important;
+    text-align: center; /* Center the text horizontally */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add a glowing effect */
+    font-size: large;
+}
+
+body {
+    font-weight: var(--bold-p);
+    font-family: var(--font-poppins);
+background-color: var(--bgColor); /* background color */
+color: var(--accentColor); /* text color */
+}
+
+.atrib {
+    font-family: var(--font-josefin);
+    font-weight: var(--bold-p);
+    transition: 0.3s;
+}
+
+.atrib:hover {
+    color: red !important;
+}
+
+#social {
+    transition: 0.3s;
+    text-align: center;
+}
+
+#social:hover {
+    transition: 0.3s;
+    padding: 1rem;
+    text-align: center;
+}
+
+#sociallink {
+    transition: 0.3s;
+    text-align: center;
+}
+
+#sociallink:hover {
+    color: gray;
+    text-align: center;
+}
+
+.box p{
+    text-align: center;
+}
+
+#userPhoto {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make it round */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    margin-bottom: 20px; /* Increase the margin below the profile picture */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23); /* Add a 3D shadow effect */
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+    border: black;
+
+    /* Add a hover effect */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#userPhoto:hover {
+    transform: scale(1.05); /* Scale up the image on hover for a 3D effect */
+    box-shadow: 0 15px 45px 0 rgba(20, 20, 20, 0.5); /* Enhance the shadow on hover */
+}
+
+
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust the width to make it more rectangular vertically */
+    height: 600px; /* Adjust the height to make it more rectangular vertically */
+    background: rgba(93, 86, 86, 0);
+    box-shadow: 0 8px 32px 0 rgba(20, 20, 20, 0.37);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 253, 253, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center items both horizontally and vertically */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .box {
+        width: 80%; /* Adjust the width to make it more rectangular vertically */
+        height: 70%; /* Adjust the height to make it more rectangular vertically */
+        justify-content: space-between;
+        transform: translate(-50%,-50%);
+        background: rgba(93, 86, 86, 0);
+    box-shadow: 0 8px 32px 0 rgba(20, 20, 20, 0.37);
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+}
+
+
+
+#btnglass {
+    transition: 0.3s;
+   padding: 0.5rem;
+    background: rgba(93, 86, 86, 0);
+    box-shadow: 0 8px 32px 0 rgba(20, 20, 20, 0.37);
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center; /* Center the text horizontally */
+    padding: 10px; /* Adjust the padding to your liking */
+    border-radius: 10px; /* Adjust the border radius to match your design */
+}
+
+#btnglass:hover {
+    padding: 1rem;
+     background: rgba(93, 86, 86, 0.473);
+    
+ }
+
+
+
+.typed-text {
+    font-family: var(--font-inter);
+    font-weight: var(--bold-h1) !important;
+    text-align: center; /* Center the text horizontally */
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.8); /* Add a glowing effect */
+    font-size: small;
+}
+
+
+/* Reset default margin and padding for the body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: var(--font-inter);
+    font-weight: var(--bold-h1) !important;
+    text-align: center; /* Center the text horizontally */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add a glowing effect */
+    font-size: large;
+}
+
+*{
+    margin: 0;
+    padding: 0%;
+}
+/* Apply styles to make content responsive */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Style the social icons */
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.socials button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.socials i {
+    color: #000; /* Change the color as needed */
+    transition: color 0.3s;
+}
+
+.socials i:hover {
+    color: #ffffff; /* Change to the desired hover color */
+}
+
+/* Style the links with responsive grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+@media (max-aspect-ratio: 16/9){
+    /* Adjust the grid for larger screens */
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+#visitor-counter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.eye-icon {
+    margin-left: 5px;
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the video covers the entire container */
+}
+
+.link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Optional: Remove underline from links */
+    color: inherit; /* Optional: Inherit text color from parent */
+}
